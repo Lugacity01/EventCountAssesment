@@ -57,7 +57,7 @@ export function EventForm({ isOpen, onClose, onSubmit, initialData }: EventFormP
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="glass relative w-full max-w-lg p-8 rounded-[2rem] shadow-2xl overflow-hidden"
+                        className="glass relative w-full max-w-lg p-8 rounded-4xl shadow-2xl overflow-hidden"
                     >
                         <div className="flex justify-between items-center mb-8">
                             <h2 className="text-2xl font-bold tracking-tight text-white flex items-center gap-3">
@@ -105,7 +105,7 @@ export function EventForm({ isOpen, onClose, onSubmit, initialData }: EventFormP
                                         type="datetime-local"
                                         value={targetDate}
                                         onChange={(e) => setTargetDate(e.target.value)}
-                                        className="w-full bg-white/5 border border-white/10 focus:border-calm/50 rounded-2xl py-4 pl-12 pr-4 text-white outline-none transition-all [color-scheme:dark]"
+                                        className="w-full bg-white/5 border border-white/10 focus:border-calm/50 rounded-2xl py-4 pl-12 pr-4 text-white outline-none transition-all scheme-dark"
                                     />
                                 </div>
                             </div>

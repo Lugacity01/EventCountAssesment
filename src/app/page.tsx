@@ -86,7 +86,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen selection:bg-white selection:text-black">
+    <div className="min-h-screen bg-background text-foreground selection:bg-white selection:text-black">
       <main className="p-6 md:p-12 lg:p-24 max-w-[1400px] mx-auto">
         {/* Header */}
         <header className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
@@ -107,7 +107,7 @@ export default function Dashboard() {
             }}
             className="glass group relative flex items-center gap-3 px-8 py-4 rounded-2xl hover:bg-white/10 transition-all overflow-hidden"
           >
-            <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-calm via-warning to-danger transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+            <div className="absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-calm via-warning to-danger transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
             <Plus size={20} className="group-hover:rotate-90 transition-transform duration-500" />
             <span className="font-bold tracking-tight">Add New Countdown</span>
           </button>

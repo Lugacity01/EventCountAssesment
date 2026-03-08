@@ -14,7 +14,7 @@ export function DeleteConfirmModal({ isOpen, onClose, onConfirm, eventName }: De
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+                <div className="fixed inset-0 z-60 flex items-center justify-center p-4">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -27,7 +27,7 @@ export function DeleteConfirmModal({ isOpen, onClose, onConfirm, eventName }: De
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="glass relative w-full max-w-md p-8 rounded-[2rem] shadow-2xl border-danger/20"
+                        className="glass relative w-full max-w-md p-8 rounded-4xl shadow-2xl border-danger/20"
                     >
                         <div className="flex justify-between items-center mb-6">
                             <div className="w-12 h-12 rounded-2xl bg-danger/10 flex items-center justify-center text-danger">
