@@ -1,105 +1,75 @@
-# Momentum - Event Countdown Collection
+# Momentum – Event Countdown Collection
 
-A premium, aesthetic countdown manager built for speed and visual delight.
+Momentum is a simple countdown manager for tracking important events.  
+The application focuses on clean design, clear time visualization, and smooth user interactions.
 
 ## 🚀 Quick Start
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+1. Install dependencies:
 
-2. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+2. Run the development server:
+
+```bash
+npm run dev
+```
+
+3. Open your browser and visit:
+
+http://localhost:3000
 
 ## ✨ Features
 
-- **Premium Glassmorphism Design**: A sophisticated dark theme with deep blurs and subtle borders.
-- **Dynamic Urgency States**:
-  - 🔴 **Danger (< 24h)**: Pulsing red aura to signal immediate priority.
-  - 🟡 **Warning (< 7 days)**: Amber glow for upcoming events.
-  - 🟢 **Calm (> 7 days)**: Gentle green "breathing" animation for peace of mind.
-- **Creative Time Visualization**: Large, mono-spaced digits for high legibility and a mechanical feel.
-- **Persistent Storage**: All your events are saved locally in your browser.
-- **Responsive Layout**: Designed to look stunning on mobile and desktop.
-
-## 🧠 Design Choices
-
-- **Dark Mode First**: Chosen for its high-end, modern feel and reduced eye strain.
-- **Urgency vs. Calm**: I used color theory and animation physics to create different emotional responses. Rapid pulsing for danger creates urgency, while slow breathing for far-off events creates a sense of preparedness without stress.
-- **Interaction Breadcrumbs**: Subtle hover effects and modal transitions make the interface feel "alive" and responsive to user input.
-
-## 🛠️ Tech Stack
-
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Date Handling**: `date-fns`
-# Momentum – Event Countdown Collection
-
-A simple countdown manager for tracking important events.  
-The app focuses on clean design, clear time visualization, and smooth interactions.
-
-## Quick Start
-
-Install dependencies:
-
-npm install
-
-Run the development server:
-
-npm run dev
-
-Open http://localhost:3000 in your browser.
-
-## Features
-
 - Create and manage multiple countdown events
 - Real-time countdown timers
-- Visual urgency states for upcoming events
-- Persistent storage using localStorage
-- Responsive layout for mobile and desktop
+- Visual urgency states based on how close an event is
+- Persistent storage using browser localStorage
+- Responsive layout designed for both mobile and desktop
 
 ### Urgency States
 
-Events change visually based on how close they are:
+Events change visually depending on how close they are:
 
-- 🔴 < 24 hours – marked as urgent
-- 🟡 < 7 days – upcoming
-- 🟢 > 7 days – normal
+- 🔴 **Less than 24 hours** – marked as urgent  
+- 🟡 **Less than 7 days** – upcoming  
+- 🟢 **More than 7 days** – normal state  
 
-This helps users quickly identify which events require attention.
+This helps users quickly identify which events need attention.
 
-## Design Decisions
+## 🧠 Design Decisions
 
-- **Dark Mode First**  
-  I chose a dark interface to create a modern look and improve contrast for the countdown timers.
+**Dark Mode First**  
+A dark interface was chosen to create a modern look while improving contrast for the countdown timers.
 
-- **Visual Priority**  
-  Color and subtle animation are used to highlight events that are approaching soon.
+**Visual Priority**  
+Color and subtle animation are used to highlight events that are approaching soon so users can quickly recognize urgent tasks.
 
-- **Readable Timers**  
-  Large monospaced digits make the countdown easy to read at a glance.
+**Readable Timers**  
+Large monospaced digits were used to ensure the countdown timers are easy to read at a glance.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Lucide React
-- date-fns
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Date Handling:** date-fns
 
+## ⚡ Challenges
 
+One challenge was managing real-time countdown updates without causing unnecessary re-renders. The solution involved carefully handling state updates so the timers remain accurate while maintaining good UI performance.
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- Add event categories
+- Add event categories or tags (Work, Personal, Health, etc.)
 - Allow sorting or filtering events
 - Add optional notifications for upcoming deadlines
+- Allow exporting or importing events for backup
+
+## ⏱️ Time Spent
+
+Approximately **12 hours** of focused work, including UI design, implementing the countdown logic, animations, and refining the overall user experience.
